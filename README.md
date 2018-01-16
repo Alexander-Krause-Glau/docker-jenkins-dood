@@ -3,7 +3,7 @@ Dockerized Jenkins CI server with capability to build docker images via  DooD (D
 
 ## How to build
 1. Find out your Docker GID by using `grep docker: /etc/group` or `getent group docker`
-2.Build via `docker build -t jenkins-dood:alpine -f Dockerfile-Alpine --build-arg DOCKER_GID=999 .`
+2. Build via `docker build -t jenkins-dood:alpine -f Dockerfile-Alpine --build-arg DOCKER_GID=999 .`
 
 ## How to run
 ~~~bash
