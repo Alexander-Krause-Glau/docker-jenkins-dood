@@ -14,3 +14,6 @@ docker run -d \
 -u 1000 \
 jenkins-dood:alpine
 ~~~
+
+## Regarding Base Device Size
+Docker's default max size for containers is 10 GB. When building images, docker might use a container that is bigger than this limit. Follow the [this guide](https://www.projectatomic.io/blog/2016/03/daemon_option_basedevicesize/) to increase this limit.
